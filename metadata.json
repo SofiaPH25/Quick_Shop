@@ -1,0 +1,6 @@
+{
+  "name": "E-commerce QuickShop",
+  "description": "A functional e-commerce web application with product catalog, shopping cart, user authentication, and simulated checkout.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
