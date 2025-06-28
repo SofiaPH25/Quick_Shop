@@ -6,7 +6,7 @@ import { productService } from '../services/productService';
 interface ProductContextType {
   products: Product[];
   loading: boolean;
-  error: string | null;
+  error: string;
   getProductById: (id: string) => Product | undefined;
   refreshProducts: () => Promise<void>;
   updateProductInList: (updatedProduct: Product) => void;
