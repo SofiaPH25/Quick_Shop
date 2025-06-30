@@ -98,6 +98,15 @@ const CheckoutPage: React.FC = () => {
     );
   }
 
+if (!/^\d{16}$/.test(formData.cardNumber.replace(/\s/g, ''))) {
+  addToast('Card number must contain only 16 digits.', 'error');
+  return;
+}
+if (!/^\d{3}$/.test(formData.cvv)) {
+  addToast('CVV must be exactly 3 digits.', 'error');
+  return;
+}
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-neutral-dark mb-8 text-center">Checkout</h1>
