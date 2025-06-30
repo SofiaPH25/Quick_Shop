@@ -20,7 +20,6 @@ const CheckoutPage: React.FC = () => {
     postalCode: '',
     cardNumber: '',
     expiryDate: '',
-    cvv: '',
   });
 
   useEffect(() => {
